@@ -92,6 +92,3 @@ export const Navbars = () => {
   );
 };
 
-{
-  /* <a href='#' className='@apply bg-[linear-gradient(180deg,#06286E_0%,#164EC0_100%)] rounded-3xl px-5 py-2 text-white'>Login</a> */
-}

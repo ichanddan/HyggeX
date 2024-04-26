@@ -38,7 +38,7 @@ export const Hero = () => {
           </div>
         </div>
         <div className="flex items-center justify-center flex-col mt-3">
-          <div className="@apply w-[21rem] flex items-center justify-around text-[#121481] md:@apply w-[500px]">
+          <div className="@apply w-[80%] flex items-center justify-around text-[#121481] md:@apply w-[500px]">
             <IoReload className="text-3xl" />
             <IoIosArrowBack className="p-1 bg-[#121481] text-white text-3xl rounded-full md:text-4xl" />
             <p className="text-xl md:text-2xl">01/10</p>
