@@ -1,23 +1,26 @@
-import { Button, Link, Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenu, NavbarMenuItem, NavbarMenuToggle } from '@nextui-org/react';
-import React from 'react'
+import {
+  Button,
+  Link,
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
+  NavbarMenu,
+  NavbarMenuItem,
+  NavbarMenuToggle,
+} from "@nextui-org/react";
+import React from "react";
 
 export const Navbars = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-  const menuItems = [
-    "Home",
-    "Flashcard",
-    "Contect",
-    "FQA",
-  ];
+  const menuItems = ["Home", "Flashcard", "Contect", "FQA"];
   return (
-    <Navbar
-    isBordered
-    isMenuOpen={isMenuOpen}
-    onMenuOpenChange={setIsMenuOpen}
-    >
+    <Navbar isBordered isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent className="sm:hidden" justify="start">
-        <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} />
+        <NavbarMenuToggle
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+        />
       </NavbarContent>
 
       <NavbarContent className="sm:hidden pr-3" justify="center">
@@ -33,35 +36,37 @@ export const Navbars = () => {
       </NavbarContent>
       <NavbarContent justify="end">
         <div className="hidden sm:flex gap-7">
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Home
-          </Link>
-        </NavbarItem>
-        <NavbarItem isActive>
-          <Link href="#" aria-current="page">
-            Flashcard
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Contect
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            FQA
-          </Link>
-        </NavbarItem>
-
+          <NavbarItem>
+            <Link color="foreground" href="#">
+              Home
+            </Link>
+          </NavbarItem>
+          <NavbarItem isActive>
+            <Link href="#" aria-current="page">
+              Flashcard
+            </Link>
+          </NavbarItem>
+          <NavbarItem>
+            <Link color="foreground" href="#">
+              Contect
+            </Link>
+          </NavbarItem>
+          <NavbarItem>
+            <Link color="foreground" href="#">
+              FQA
+            </Link>
+          </NavbarItem>
         </div>
         <NavbarItem>
-          <Button as={Link} href="#" className='@apply bg-[linear-gradient(180deg,#06286E_0%,#164EC0_100%)] rounded-3xl px-5 py-2 text-white'>
+          <Button
+            as={Link}
+            href="#"
+            className="@apply bg-[linear-gradient(180deg,#06286E_0%,#164EC0_100%)] rounded-3xl px-5 py-2 text-white"
+          >
             Login
           </Button>
         </NavbarItem>
       </NavbarContent>
-
 
       <NavbarMenu>
         {menuItems.map((item, index) => (
@@ -69,7 +74,11 @@ export const Navbars = () => {
             <Link
               className="w-full"
               color={
-                index === 2 ? "warning" : index === menuItems.length - 1 ? "danger" : "foreground"
+                index === 2
+                  ? "warning"
+                  : index === menuItems.length - 1
+                  ? "danger"
+                  : "foreground"
               }
               href="#"
               size="lg"
@@ -80,7 +89,9 @@ export const Navbars = () => {
         ))}
       </NavbarMenu>
     </Navbar>
-  )
-}
+  );
+};
 
-{/* <a href='#' className='@apply bg-[linear-gradient(180deg,#06286E_0%,#164EC0_100%)] rounded-3xl px-5 py-2 text-white'>Login</a> */}
+{
+  /* <a href='#' className='@apply bg-[linear-gradient(180deg,#06286E_0%,#164EC0_100%)] rounded-3xl px-5 py-2 text-white'>Login</a> */
+}
