@@ -6,7 +6,7 @@ export const FAQ = () => {
     const defaultContent =
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
   return (
-    <div className="px-44">
+    <div className="px-2 md:px-44">
       <h1 className="text-4xl text-[#121481] @apply font-bold tracking-[0.005em]">
         FAQ
       </h1>
