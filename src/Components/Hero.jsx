@@ -46,7 +46,7 @@ export const Hero = () => {
             <GoScreenFull className="text-3xl" />
           </div>
         </div>
-        <div className="flex items-center gap-10 md:justify-between my-5 ">
+        <div className="flex items-center justify-between  md:gap-10 my-5 ">
           <div>
             <img src="/logo-1.png" className="w-36 md:w-[200px]" alt="" />
           </div>
