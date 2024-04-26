@@ -36,13 +36,13 @@ export const Navbars = () => {
       </NavbarContent>
       <NavbarContent justify="end">
         <div className="hidden sm:flex gap-7">
-          <NavbarItem>
-            <Link color="foreground" href="#">
+          <NavbarItem isActive>
+            <Link color="foreground"  aria-current="page" href="#">
               Home
             </Link>
           </NavbarItem>
-          <NavbarItem isActive>
-            <Link href="#" aria-current="page">
+          <NavbarItem >
+            <Link color="foreground" href="#">
               Flashcard
             </Link>
           </NavbarItem>
